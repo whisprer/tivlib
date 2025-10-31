@@ -1,40 +1,24 @@
-# TIV.lib
-A python library for the content-based tonal description of musical audio signals, which implements the Tonal Interval Vector space.
-Its main novelty relies on the DFT-based perceptually-inspired Tonal Interval Vector space, from which multiple instantaneous and global representations, descriptors and metrics are computed---e.g., harmonic changes, dissonance, diatonicity, and musical key.
+[README.md]
 
-Installation and Usage
--------
-To use this application, the user should first clone this repository to the working python directory.
-Then, in case `numpy` is not installed, the user should run `pip install numpy`.
-The library can be imported with `import TIVlib as tiv`.
+# TIVlib
 
-Example Code
--------
-A detailed example on how to use the TIV.lib is available in [TIVlib_example.ipynb](TIVlib_example.ipynb) and in a [Google Colab notebook](https://colab.research.google.com/drive/1QCoOI5Ix9_cekpMDcI7liVIJM--Kg6px) .
+<p align="center">
+  <a href="https://github.com/whisprer/TIVlib/releases"> 
+    <img src="https://img.shields.io/github/v/release/whisprer/TIVlib?color=4CAF50&label=release" alt="Release Version"> 
+  </a>
+  <a href="https://github.com/whisprer/TIVlib/actions"> 
+    <img src="https://img.shields.io/github/actions/workflow/status/whisprer/TIVlib/lint-and-plot.yml?label=build" alt="Build Status"> 
+  </a>
+</p>
 
-We provide here a simple example on how to run some of the feature extractors available in TIV.lib:
+![Commits](https://img.shields.io/github/commit-activity/m/whisprer/TIVlib?label=commits) 
+![Last Commit](https://img.shields.io/github/last-commit/whisprer/TIVlib) 
+![Issues](https://img.shields.io/github/issues/whisprer/TIVlib) 
+[![Version](https://img.shields.io/badge/version-3.1.1-blue.svg)](https://github.com/whisprer/TIVlib) 
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)](https://www.microsoft.com/windows)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-```python
-from TIVlib import TIV as tiv
-metal = "./audio_files/metal.wav"
-metal_hpcp = file_to_hpcp(metal)
-metal_tiv = tiv.from_pcp(metal_hpcp)
-print("tiv.mag: " + str(glass_tiv.mags()))
-print("tiv.diatonicity: " + str(glass_tiv.diatonicity()))
-print("tiv.chromacity: " + str(glass_tiv.chromaticity()))
-print("tiv.dissonance: " + str(glass_tiv.dissonance()))
-
-```
-
-References
--------
-For more information on the TIV, it's characteristics and it's applications, we redirect the readers to the [TIV website](https://sites.google.com/site/tonalintervalspace/home) . 
-
-
-Authors
--------
-António Ramires
-aframires@gmail.com
-
-Gilberto Bernardes
-gba@fe.up.pt
+<p align="center">
+  <img src="TIVlib-banner.png" width="850" alt="TIVlib Banner"> 
+</p>
